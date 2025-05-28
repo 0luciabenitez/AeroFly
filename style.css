@@ -1,0 +1,205 @@
+/* Estilo para el cuerpo (body) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 16px; 
+    margin: 0; 
+    line-height: 1.6; 
+    color: #333; 
+    background-color: #f0f2f5; 
+}
+
+/* Estilo para el enlace "Saltar al contenido principal" */
+.skip-link {
+    position: absolute;
+    left: -9999px; 
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999; 
+}
+
+.skip-link:focus {
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    z-index: 999; 
+    padding: 10px;
+    background-color: #fefefe;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    color: #333;
+ 
+    border-radius: 5px;
+}
+
+/* Estilo para el encabezado (header) */
+header {
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    padding: 1.5rem; 
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para la navegación (nav) */
+nav {
+    background-color: #34495e;
+    padding: 0.8rem 0; 
+    display: inline-block; 
+    width: 80%; 
+    text-align: center; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+
+/* Estilo para la lista no ordenada dentro de la navegación */
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+/* Estilo para los enlaces de navegación */
+nav ul li {
+    display: inline-block; 
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    display: block; 
+    color: #ecf0f1; 
+    text-decoration: none; 
+    padding: 10px 0;
+    transition: background-color 0.3s ease; 
+    border-radius: 5px; 
+}
+
+/* Efecto hover para los enlaces de navegación */
+nav ul li a:hover {
+    background-color: #1abc9c; 
+}
+
+/* Estilo para la imagen en el elemento nav (selector descendente) */
+nav img {
+    width: 10%; 
+    height: auto; 
+    vertical-align: middle; 
+    margin: 0 auto; 
+    display: inline-block; 
+}
+
+
+/* Estilo para el contenido principal (main) */
+main {
+    background-color: #ffffff; 
+    padding: 20px 30px; 
+    margin: 20px auto; 
+    max-width: 900px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em; 
+}
+
+/* Estilo para el pie de página (footer) */
+footer {
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px; 
+}
+
+/* Estilo para los encabezados h1 */
+h1 {
+    text-align: center; 
+    font-family: 'Merriweather', serif; 
+    color: #1abc9c; 
+    margin-bottom: 1rem;
+    font-size: 2.8em; 
+    letter-spacing: 0.05em; 
+}
+
+/* Estilo para los párrafos (p) */
+p {
+    line-height: 1.7; 
+    margin-bottom: 1em; 
+}
+
+/* Estilos adicionales para imágenes (global) */
+img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 1.5rem auto; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo para los enlaces generales en el contenido */
+main a {
+    color: #3498db; 
+    text-decoration: none; 
+    border-bottom: 1px solid #3498db; 
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+main a:hover {
+    color: #2980b9; 
+    border-color: #2980b9;
+}
+
+/* Estilo para la clase grid */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%; 
+    justify-content: center; 
+    align-items: start; 
+    row-gap: 30px; /* Espacio vertical entre las filas */
+    column-gap: 20px; /* Espacio horizontal entre las columnas */
+    margin: 20px auto; /* Centra la rejilla en la página */
+    max-width: 900px; /* Ancho máximo para la rejilla */
+    border: 1px solid #ddd; /* Para visualizar el grid */
+    padding: 10px; /* Para visualizar el grid */
+}
+
+
+/* Estilo para las imágenes dentro de la clase grid (selector descendente) */
+.grid img {
+    width: 100%; /* Las imágenes ocupan el 100% de su celda de la rejilla */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacio extra debajo de las imágenes */
+    /* Los estilos de borde y sombra globales se aplican, pero puedes anularlos si es necesario */
+}
+
+
+/* Estilo para la clase flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    padding: 20px;
+    background-color: #f0f0f0; 
+    margin: 20px auto; 
+    max-width: 900px; 
+    border: 1px solid #ccc; 
+}
+
+
+/* Estilo para los elementos directamente dentro de .flex (para visualización) */
+.flex > div {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin: 10px; 
+    flex: 1 1 250px; 
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+}
